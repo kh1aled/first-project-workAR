@@ -483,7 +483,7 @@ a {
   font-family: Mochiy Pop P One;
   font-weight: bold;
   text-shadow: 0 0 5px var(--ah-white), 0 0 5px var(--ah-white);
-  font-size: 4vh;
+  font-size: 1rem;
 }
 .game .body .body-wrapper .cards .card-item .text {
   width: 100%;
