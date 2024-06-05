@@ -155,6 +155,7 @@ $width: 85%;
   visibility: hidden;
   transform-origin: left top;
   background-color: #b25179;
+  
 
   @include mediaQuery($mobile_min_width) {
     padding: 1rem;
@@ -365,7 +366,7 @@ $width: 85%;
             box-shadow: 0 0.25rem 0.25rem $shadow-1;
             visibility: hidden;
             cursor: pointer;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: bold;
             padding: 2.5vh 2vw;
             font-family: Noto Sans Malayalam;
