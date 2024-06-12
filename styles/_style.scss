@@ -138,6 +138,7 @@ $width: 85%;
     transform: translateY(-100%);
     transition: 0.5s;
     visibility: hidden;
+    z-index: 22222322222;
     .fa-solid {
       &.hide {
         display: none;
@@ -237,23 +238,23 @@ $width: 85%;
       }
     }
     .title-image1 {
-      width: 46%;
+      width: 43%;
       height: 47%;
-      top: -18%;
-      left: -16%;
+      top: -20%;
+      left: -40%;
     }
     .title-image2 {
       width: 58%;
       height: 65%;
       top: -20%;
-      left: -39%;
+      left: -40%;
     }
 
     .play {
       width: 20vw;
       height: 15vw;
       position: absolute;
-      bottom: -15%;
+      bottom: -20%;
       left: 40%;
       animation: animateBtn 2s ease-in-out alternate-reverse infinite;
       @include mediaQuery($medScreen_max_width) {
@@ -366,7 +367,7 @@ $width: 85%;
             box-shadow: 0 0.25rem 0.25rem $shadow-1;
             visibility: hidden;
             cursor: pointer;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: bold;
             padding: 2.5vh 2vw;
             font-family: Noto Sans Malayalam;
@@ -421,7 +422,7 @@ $width: 85%;
                 text-shadow:
                   0 0 5px var(--ah-white),
                   0 0 5px var(--ah-white);
-                font-size: 1rem;
+                font-size: 1.4rem;
               }
             }
           }
@@ -442,6 +443,28 @@ $width: 85%;
         }
       }
     }
+  }
+}
+.pause-overlay {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: 11111111111;
+  background-color: rgb(0 0 0 / 94%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.hide {
+    display: none;
+  }
+  .message {
+    font-family: 'DG-3asomy-Regular';
+    text-transform: uppercase;
+    font-size: 4rem;
   }
 }
 .pop-overlay {

@@ -1,6 +1,7 @@
 
 const popupModal = document.querySelector(".popup");
 const popupOverlay = document.querySelector(".pop-overlay");
+const pausedOverlay = document.querySelector(".pause-overlay");
 const game = document.querySelector(".game");
 const playButton = document.querySelector(".game .homepage .play");
 const homepage = document.querySelector(".game .homepage");
@@ -86,10 +87,17 @@ playButton.addEventListener("click", () => {
 });
 
 pauseButton.addEventListener("click", () => {
+  console.log("paused");
   const hiddenIcon = pauseButton.querySelector("i.hide");
   const shownIcon = pauseButton.querySelector("i:not(.hide)");
   hiddenIcon.classList.remove("hide");
   shownIcon.classList.add("hide");
+  pausedOverlay.classList.toggle("hide");
+  if (isRunning) {
+    stopTimer();
+  } else {
+    startTimer();
+  }
 });
 
 textItems.forEach((textItem) => {
